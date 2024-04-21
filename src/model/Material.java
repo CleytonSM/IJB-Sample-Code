@@ -18,7 +18,7 @@ public class Material {
 
     public void setIdMaterial(int idMaterial) {
     if (idMaterial < 0) {
-        throw new RuntimeException("Id lenght less than zero");
+        throw new RuntimeException("Id length less than zero");
     }
         this.idMaterial = idMaterial;
     }
@@ -29,7 +29,7 @@ public class Material {
 
     public void setNameMaterial(String nameMaterial) {
         if(nameMaterial.length() > 60){
-            throw new RuntimeException("Name lenght bigger than 60 chars");
+            throw new RuntimeException("Name length bigger than 60 chars");
         }
         this.nameMaterial = nameMaterial;
     }
