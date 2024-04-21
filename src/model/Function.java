@@ -14,8 +14,8 @@ public class Function {
     }
 
     public void setIdFunction(int idFunction) {
-        if(idFunction < 0){
-            throw new RuntimeException("Function id less than zero");
+        if(idFunction <= 0){
+            throw new RuntimeException("Function id less than one");
         }
         this.idFunction = idFunction;
     }
