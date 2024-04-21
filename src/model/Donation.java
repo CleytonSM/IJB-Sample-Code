@@ -8,10 +8,10 @@ public class Donation {
     private Long qtDonation;
 
     public Donation(int idDonation, Donor donor, String dsDonation, Long qtDonation) {
-        this.idDonation = idDonation;
-        this.donor = donor;
-        this.dsDonation = dsDonation;
-        this.qtDonation = qtDonation;
+        this.setIdDonation(idDonation);
+        this.setDonor(donor);
+        this.setDsDonation(dsDonation);
+        this.setQtDonation(qtDonation);
     }
 
     public int getIdDonation() {
