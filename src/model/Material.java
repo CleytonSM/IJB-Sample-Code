@@ -1,6 +1,6 @@
 package model;
 
-public class Material {
+public abstract class Material {
 
     private int idMaterial;
     private String nameMaterial;

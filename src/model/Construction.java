@@ -1,6 +1,6 @@
 package model;
 
-public class Construction {
+public class Construction{
     private int idConstruction;
 
     public Construction(int idConstruction) {
