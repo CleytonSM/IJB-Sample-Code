@@ -1,10 +1,9 @@
 package model;
 
-public class Construction extends Material{
+public class Construction{
     private int idConstruction;
 
-    public Construction(int idMaterial, String nameMaterial, long qtyMaterial, int idConstruction) {
-        super(idMaterial, nameMaterial, qtyMaterial);
+    public Construction(int idConstruction) {
         this.setIdConstruction(idConstruction);
     }
 
