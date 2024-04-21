@@ -5,8 +5,8 @@ import model.material.DonatedMaterial;
 import java.security.DomainLoadStoreParameter;
 
 public class Provider {
-    DonatedMaterial donatedMaterial;
-    Donation donation;
+    private DonatedMaterial donatedMaterial;
+    private Donation donation;
 
     public Provider(DonatedMaterial donatedMaterial, Donation donation) {
         this.setDonatedMaterial(donatedMaterial);
