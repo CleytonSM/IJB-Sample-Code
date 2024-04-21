@@ -17,7 +17,7 @@ public class Rebate {
      * Cria uma instância de Rebate com o ID, preço para abater e descrição especificados.
      *
      * @param idRebate O ID do abatimento.
-     * @param pcRebate O percentual do abatimento.
+     * @param pcRebate O valor do abatimento.
      * @param dsRebate A descrição do abatimento.
      */
     public Rebate(int idRebate, float pcRebate, String dsRebate) {
