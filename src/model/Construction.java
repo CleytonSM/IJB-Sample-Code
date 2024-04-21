@@ -11,6 +11,7 @@ public class Construction {
         return idConstruction;
     }
 
+
     public void setIdConstruction(int idConstruction) {
         if(idConstruction < 0){
             throw new RuntimeException("id less than zero");
