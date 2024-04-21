@@ -1,15 +1,15 @@
 package model.material;
 
-import model.Construction;
+import model.Donation;
 
-public class MaterialInUse extends Material{
-    private Material material;
-    private Construction construction;
+public class DonatedMaterial extends Material{
+    Material material;
+    Donation donation;
 
-    public MaterialInUse(Material material, Construction construction) {
+    public DonatedMaterial( Material material, Donation donation) {
         super(material.getIdMaterial(), material.getNameMaterial(), material.getQtyMaterial());
         this.setMaterial(material);
-        this.setConstruction(construction);
+        this.setDonation(donation);
     }
 
     public Material getMaterial() {
@@ -23,11 +23,13 @@ public class MaterialInUse extends Material{
         this.material = material;
     }
 
-    public Construction getConstruction() {
-        return construction;
+    public Donation getDonation() {
+        return donation;
     }
 
-    public void setConstruction(Construction construction) {
-        this.construction = construction;
+    public void setDonation(Donation donation) {
+        if (donation == null){
+            throw new RuntimeException("Donation can't be null");
+        };
     }
 }
