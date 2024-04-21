@@ -17,8 +17,8 @@ public abstract class Material {
     }
 
     public void setIdMaterial(int idMaterial) {
-    if (idMaterial < 0) {
-        throw new RuntimeException("Id length less than zero");
+    if (idMaterial <= 0) {
+        throw new RuntimeException("Id length less than one");
     }
         this.idMaterial = idMaterial;
     }

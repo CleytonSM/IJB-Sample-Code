@@ -13,8 +13,8 @@ public class Construction extends Material{
     }
 
     public void setIdConstruction(int idConstruction) {
-        if(idConstruction < 0){
-            throw new RuntimeException("id less than zero");
+        if(idConstruction <= 0){
+            throw new RuntimeException("id less than one");
         }
         this.idConstruction = idConstruction;
     }
