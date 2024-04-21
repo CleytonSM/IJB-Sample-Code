@@ -16,11 +16,11 @@ public class Material {
         return idMaterial;
     }
 
-    public void setIdMaterial(int IdMaterial) {
-    if (IdMaterial < 0) {
+    public void setIdMaterial(int idMaterial) {
+    if (idMaterial < 0) {
         throw new RuntimeException("Id lenght less than zero");
     }
-        this.idMaterial = IdMaterial;
+        this.idMaterial = idMaterial;
     }
 
     public String getNameMaterial() {
