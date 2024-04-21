@@ -1,4 +1,6 @@
-package model;
+package model.material;
+
+import model.Construction;
 
 public class MaterialInUse extends Material{
     private Material material;

@@ -1,5 +1,8 @@
 package model;
 
+import model.material.Material;
+import model.material.ReachableMaterial;
+
 import java.util.List;
 
 public class Trade {
@@ -32,7 +35,7 @@ public class Trade {
     }
 
     public void addMaterial(int idMaterial, String nameMaterial, long qtyMaterial) {
-        this.material.add(new Material(idMaterial, nameMaterial, qtyMaterial));
+        this.material.add(new ReachableMaterial(idMaterial, nameMaterial, qtyMaterial));
     }
 
     public List<OutletProduct> getOutletProducts() {
