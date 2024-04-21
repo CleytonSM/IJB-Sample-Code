@@ -28,6 +28,8 @@ public class DonatedMaterial extends Material{
     }
 
     public void setDonation(Donation donation) {
-        this.donation = donation;
+        if (donation == null){
+            throw new RuntimeException("Donation can't be null");
+        };
     }
 }
