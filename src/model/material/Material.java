@@ -1,10 +1,10 @@
-package model;
+package model.material;
 
 public abstract class Material {
 
-    private int idMaterial;
-    private String nameMaterial;
-    private long qtyMaterial;
+    protected int idMaterial;
+    protected String nameMaterial;
+    protected long qtyMaterial;
 
     public Material(int idMaterial, String nameMaterial, long qtyMaterial) {
         this.setIdMaterial(idMaterial);

@@ -1,4 +1,4 @@
-package model;
+package model.material;
 
 public class BoughtMaterial extends Material{
 
