@@ -19,8 +19,8 @@ public class OutletProduct {
     }
 
     public void setIdOutletProduct(int idOutletProduct) {
-        if (idOutletProduct < 0) {
-            throw new RuntimeException("Id length less than zero");
+        if (idOutletProduct <= 0) {
+            throw new RuntimeException("Id length less than one");
         }
         this.idOutletProduct = idOutletProduct;
     }
