@@ -5,7 +5,7 @@ import java.util.List;
 /**
  * Representa um abatimento aplicado a um produto outlet.
  */
-public class Rebate {
+public class Rebate implements OutletProductAdder {
 
     private int idRebate;
     private List<Trade> trades;
@@ -85,6 +85,7 @@ public class Rebate {
      * @param nmOutletProduct O nome do produto outlet.
      * @param dsOutletProduct A descrição do produto outlet.
      */
+    @Override
     public void addOutletProducts(int idOutletProduct, Donation donation, String nmOutletProduct, String dsOutletProduct) {
         this.outletProducts.add(new OutletProduct(idOutletProduct, donation, nmOutletProduct, dsOutletProduct));
     }

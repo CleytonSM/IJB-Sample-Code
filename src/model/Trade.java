@@ -8,7 +8,7 @@ import java.util.List;
 /**
  * Representa uma troca.
  */
-public class Trade {
+public class Trade implements OutletProductAdder {
 
     private int idTrade;
     private List<Material> material;
@@ -88,6 +88,7 @@ public class Trade {
      * @param nmOutletProduct O nome do produto de saída.
      * @param dsOutletProduct A descrição do produto de saída.
      */
+    @Override
     public void addOutletProducts(int idOutletProduct, Donation donation, String nmOutletProduct, String dsOutletProduct) {
         this.outletProducts.add(new OutletProduct(idOutletProduct, donation, nmOutletProduct, dsOutletProduct));
     }
